@@ -1,0 +1,5 @@
+entrada("Por favor introduza o preço do produto para calcularmos o seu desconto e valor final", priceProd)
+    imprime("o preço do seu produto é ", + priceProd"€.")
+
+se priceProd < 100
+    crash("O preço do seu item é inferior à 100€, lamentamos mas não tem direito a desconto.")

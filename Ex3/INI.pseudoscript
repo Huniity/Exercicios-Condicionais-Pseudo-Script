@@ -1,0 +1,29 @@
+anosBisexto =
+
+[
+    2016
+    2020
+    2024
+    2028
+    2032
+]
+
+cada anoBisexto em anosBisexto:
+    imprime(anoBisexto)
+
+
+entrada("Por favor introduza um ano compreendido entre 2016 e 2032", anoEscolhido)
+    se anoEscolhido < 2016
+        crash("O ano introduzido não está dentro das possibilidades acima")
+
+imprime("O seu ano escolhido foi", + anoEscolhido)
+    /*
+    se anoEscolhido nao for multiplo de 4
+    */
+    se anoEscolhida não Está em anosBisexto
+        imprime("O ano escolhido não é bisexto")
+    /*
+    se anoEscolhido for multiplo de 4
+    */
+    se anoEscolhido está em anosBisexto
+        imprime("O ano escolhido é bisexto")

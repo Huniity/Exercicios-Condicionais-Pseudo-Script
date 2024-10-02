@@ -1,0 +1,7 @@
+entrada("Por favor introduza um número", UserNum)
+imprime("O seu número é", + UserNum)
+
+se UserNum % 5 == 0
+    imprime("O seu número é múltiplo de 5.")
+se UserNum % 5 =/= 0
+    imprime("O seu número não é múltiplo de 5")

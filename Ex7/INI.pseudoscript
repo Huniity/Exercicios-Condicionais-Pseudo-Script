@@ -1,0 +1,4 @@
+entrada("Por favor introduza um número", UserNum)
+imprime("O seu número é ", + UserNum)
+
+se UserNum 

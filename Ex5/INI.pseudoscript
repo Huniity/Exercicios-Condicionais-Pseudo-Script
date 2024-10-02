@@ -1,0 +1,12 @@
+entrada("Por favor introduze à nota em Programação I", UserNote1)
+entrada("Por favor introduze à nota em Back-end I", UserNote2)
+entrada("Por favor introduze à nota em Front-end I", UserNote3)
+
+funcao soma de (UserNote1+UserNote2+UserNote3)/3
+    retorne resultado
+
+imprime("a média do aluno é de", + resultado)
+    se resultado >= 7 
+    imprime("O aluno foi aprovado!")
+    se resultado <7
+    imprime ("O aluno foi reprovado!")

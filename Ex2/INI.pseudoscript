@@ -1,0 +1,39 @@
+numerosPar = 
+[
+    2
+    4
+    6
+    8
+    10
+]
+
+numerosImpar =
+[
+    1
+    3
+    5
+    7
+    9
+]
+
+cada numeroPar em numerosPar:
+    imprime(numeroPar)
+cada numeroImpar em numerosImpar:
+    imprime(numeroImpar)
+
+
+entrada("Por favor introduza um número dentro das possibilidades acima:", UserNum)
+    
+
+    se UserNum nao esta em numerosPar
+    crash("O seu número não está na lista dos números possíveis")
+    se UserNum nao esta em numerosImpar
+    crash("O seu número não está na lista dos números possíveis")
+    
+    se UserNum == numerosImpar
+        imprime("O seu número é ", + UserNum "e o seu número é Impar")
+    se UserNum == numerosPar
+        imprime("O seu número é ", + UserNum "e o seu número é Par")
+   
+
+

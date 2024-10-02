@@ -1,0 +1,7 @@
+listaVogal = [a, e, i, o, u]
+
+entrada("Introduza uma letra por favor", userChar)
+se userChar está em listaVogal
+    imprime("A sua letra é uma vogal.")
+se userChar não está em listaVogal
+    imprime("A sua letra é uma consoante")

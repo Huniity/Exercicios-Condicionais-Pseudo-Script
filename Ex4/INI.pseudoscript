@@ -1,0 +1,13 @@
+entrada("Por favor introduze um primeiro número:", UserNum1)
+    imprime("O seu primeiro número é", + UserNum1)
+
+entrada("Por favor introduze um segundo número:", UserNum1)
+    imprime("O seu segundo número é", + UserNum2)
+
+se UserNum1 > UserNum2
+    imprime("O seu primeiro número é maior que o segundo.")
+se UserNum1 < UserNum2
+    imprime("O seu segundo número é maior que o primeiro.")
+se UserNum1 == UserNum2
+    imprime("Os seus números são iguais.")
+    

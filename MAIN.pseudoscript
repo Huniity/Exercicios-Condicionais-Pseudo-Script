@@ -1,0 +1,43 @@
+/*entrada("Está certo? (Y/N)", resposta)
+    imprime("o seu nome é " + nome)
+    entrada("Está certo? (Y/N)", resposta)
+        se[resposta]=Y
+            então
+            imprime("o seu nome é então", +nome)
+            entrada("Por favor introduza agora a sua cor favorita", cor)
+            entrada(nome, " A sua cor é," cor, "deseja prosseguir? [Y/N]", respostacor)
+		
+        
+        se [respostacor]=Y
+		imprimir(" A sua cor é," cor)
+            imprimir("Obrigado po introduzir os seus dados ", +nome ", a sua cor favorita é " +cor)
+		senao
+		
+        entrada("Por favor introduza a sua cor novamente", cor)
+
+    senao
+    entrada("Introduza o seu nome", nome)
+*/
+
+
+/*PROGRAMA AULA 01/10*/
+
+cores = [
+    "verde"
+    "preto"
+    "vermelho"
+    "azul"
+    "branco"
+]
+
+entrada("Introduza o seu nome: ",nome)
+imprimir("Cores possíveis:")
+cada cor em cores:
+    imprime(cor)
+
+entrada("Escolha a sua cor preferida: ", corEscolhida)
+
+se corEscolhida não está em cores:
+    crash("Tens de escolher uma cor dentro das possibilidades apresentadas anteriormente")
+
+imprime(nome + "gosta de cor " corEscolhida)
