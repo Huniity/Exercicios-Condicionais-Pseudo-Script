@@ -1,12 +1,27 @@
+#Programa: Descobrir à média do aluno e saber se está aprovado/reprovado
+
+entrada("Introduza o nome do aluno:", UserName)
+
 entrada("Por favor introduze à nota em Programação I", UserNote1)
+ se UserNote1 não é um número
+    crash("O que introduziu não é um número.")
+
 entrada("Por favor introduze à nota em Back-end I", UserNote2)
+ se UserNote2 não é um número
+    crash("O que introduziu não é um número.")
+    
 entrada("Por favor introduze à nota em Front-end I", UserNote3)
+ se UserNote3 não é um número
+    crash("O que introduziu não é um número.")
 
-funcao soma de (UserNote1+UserNote2+UserNote3)/3
-    retorne resultado
+funcao soma(UserNote1+UserNote2+UserNote3)/3 #Soma das 3 notas e divisão por 3
+    retorne média #Resultado da média
 
-imprime("a média do aluno é de", + resultado)
-    se resultado >= 7 
-    imprime("O aluno foi aprovado!")
-    se resultado <7
-    imprime ("O aluno foi reprovado!")
+imprime("A média do aluno ", + UserName" é de", + média)
+
+    se média > 7
+        ou se média =7 
+        imprime("O aluno foi aprovado!")
+
+    se média <7
+        imprime ("O aluno foi reprovado!")

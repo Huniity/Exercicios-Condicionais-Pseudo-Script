@@ -1,39 +1,10 @@
-numerosPar = 
-[
-    2
-    4
-    6
-    8
-    10
-]
+#Programa: Descobrir se o número é par ou ímpar.
 
-numerosImpar =
-[
-    1
-    3
-    5
-    7
-    9
-]
-
-cada numeroPar em numerosPar:
-    imprime(numeroPar)
-cada numeroImpar em numerosImpar:
-    imprime(numeroImpar)
-
-
-entrada("Por favor introduza um número dentro das possibilidades acima:", UserNum)
+entrada("Por favor introduza um número:", UserNum)
+    se UserNum não é um número
+    crash("O que introduziu não é um número.")
     
-
-    se UserNum nao esta em numerosPar
-    crash("O seu número não está na lista dos números possíveis")
-    se UserNum nao esta em numerosImpar
-    crash("O seu número não está na lista dos números possíveis")
-    
-    se UserNum == numerosImpar
-        imprime("O seu número é ", + UserNum "e o seu número é Impar")
-    se UserNum == numerosPar
-        imprime("O seu número é ", + UserNum "e o seu número é Par")
-   
-
-
+        se UserNum % 2 == 0 #Se UserNum for divido por 2 e resultado for 0 então é Par
+            imprime("O seu número é ", + UserNum "e o seu número é Par")
+        se UserNum % 2 =/= 0 #Se UserNum for divido por 2 e resultado não for 0 então é Impar
+            imprime("O seu número é ", + UserNum "e o seu número é Impar")

@@ -1,5 +1,15 @@
+#Programa para cálculo de preço final com desconto de um produto
+
 entrada("Por favor introduza o preço do produto para calcularmos o seu desconto e valor final", priceProd)
     imprime("o preço do seu produto é ", + priceProd"€.")
 
 se priceProd < 100
     crash("O preço do seu item é inferior à 100€, lamentamos mas não tem direito a desconto.")
+
+se priceProd > 100
+    funcao multiplicar(10/priceProd)x100
+    retorne Discount #O valor do desconto após calculo
+    funcao substrair(priceProd-Discount)
+    retorne finalPrice #O valor do preço final após deduzir o desconto
+
+imprime("O preço do seu artigo após um desconto de ", + Discount"€ é de ", +finalPrice"€.")

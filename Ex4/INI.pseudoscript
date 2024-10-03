@@ -1,13 +1,21 @@
+#Programa: Descobrir qual número é maior que o outro.
+
 entrada("Por favor introduze um primeiro número:", UserNum1)
+    se UserNum1 não é um número
+        crash("O que introduziu não é um número.")
+
     imprime("O seu primeiro número é", + UserNum1)
 
-entrada("Por favor introduze um segundo número:", UserNum1)
+entrada("Por favor introduze um segundo número:", UserNum2)
+    se UserNum2 não é um número
+        crash("O ano introduzido não é um número")
+
     imprime("O seu segundo número é", + UserNum2)
 
-se UserNum1 > UserNum2
-    imprime("O seu primeiro número é maior que o segundo.")
-se UserNum1 < UserNum2
-    imprime("O seu segundo número é maior que o primeiro.")
-se UserNum1 == UserNum2
-    imprime("Os seus números são iguais.")
-    
+        se UserNum1 > UserNum2
+            imprime("O seu primeiro número é maior que o segundo.")
+        se UserNum1 < UserNum2
+            imprime("O seu segundo número é maior que o primeiro.")
+        se UserNum1 == UserNum2
+            imprime("Os seus números são iguais.")
+        

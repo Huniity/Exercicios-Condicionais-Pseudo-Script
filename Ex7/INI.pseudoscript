@@ -1,4 +1,15 @@
-entrada("Por favor introduza um número", UserNum)
+#Programa para descobrir se um número é primo.
+
+entrada("Por favor introduza um número.", UserNum)
+    se UserNum não é um número
+        crash("O que introduziu não é um número.")
+
 imprime("O seu número é ", + UserNum)
 
-se UserNum 
+    se UserNum > 1 #Se UserNum for superior à 1
+        e se UserNum % UserNum = 0 #E se o resultado de UserNum dividido por UserNum for 0
+            e se UserNum % 1 #E se UserNum dividido por 1 for 0
+                e se UserNum for um número inteiro #E se UserNum não tiver parte decimal
+
+    imprime("O seu número é primo.")
+    

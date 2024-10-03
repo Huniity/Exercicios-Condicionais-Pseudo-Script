@@ -1,18 +1,12 @@
-numeros = 
-[
-    -1
-    0
-    1
-]
-cada numero em numeros:
-    imprime(numero)
+#Programa: Descobrir se o número é positivo/negativo/zéro.
 
 entrada("Por favor introduza um número dentro das possibilidades acima:", UserNum)
-se UserNum nao esta em numeros
-    crash("O seu número não está na lista dos números possíveis")
+    se UserNum não é um número
+    crash("O que introduziu não é um número.")
 
-      imprime("O seu número é ", + UserNum "e o seu número é négativo")
-    se UserNum > 0
-        imprime("O seu número é ", + UserNum "e o seu número é positivo")
-    se UserNum == 0
-        imprime("O seu número é ", + UserNum "e o seu número é igual à 0")
+        se UserNum < 0 #Menor de 0
+        imprime("O seu número é ", + UserNum "e o seu número é négativo")
+        se UserNum > 0 #Maior de 0
+            imprime("O seu número é ", + UserNum "e o seu número é positivo")
+        se UserNum == 0 #Igual a 0
+            imprime("O seu número é ", + UserNum "e o seu número é igual à 0")

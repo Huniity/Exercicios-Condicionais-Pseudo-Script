@@ -1,7 +1,12 @@
+#Programa para saber se letra é uma vogal.
+
 listaVogal = [a, e, i, o, u]
 
 entrada("Introduza uma letra por favor", userChar)
-se userChar está em listaVogal
-    imprime("A sua letra é uma vogal.")
-se userChar não está em listaVogal
-    imprime("A sua letra é uma consoante")
+se userChar não for um carácter
+    crash("O que introduziu não é uma letra.")
+
+    se userChar está em listaVogal #Se userChar estiver na lista listaVogal então é vogal.
+        imprime("A sua letra é uma vogal.")
+    se userChar não está em listaVogal
+        imprime("A sua letra é uma consoante")

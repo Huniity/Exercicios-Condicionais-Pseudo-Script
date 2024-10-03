@@ -1,7 +1,12 @@
+#Programa: Descobrir se o número é multiplo de 5.
+
 entrada("Por favor introduza um número", UserNum)
+ se UserNum não é um número
+    crash("O que introduziu não é um número.")
+    
 imprime("O seu número é", + UserNum)
 
-se UserNum % 5 == 0
+se UserNum % 5 == 0 #Se resultado da divisão for 0 então é multiplo.
     imprime("O seu número é múltiplo de 5.")
-se UserNum % 5 =/= 0
+se UserNum % 5 =/= 0 #Se resultado da divisão não for 0 então não é multiplo.
     imprime("O seu número não é múltiplo de 5")
