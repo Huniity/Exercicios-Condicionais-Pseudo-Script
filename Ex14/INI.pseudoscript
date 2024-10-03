@@ -1,0 +1,16 @@
+#Programa para verificar se número é perfeito
+
+entrada("Por favor introduza um número.", UserNum)
+    se UserNum não é um número
+        crash("O que introduziu não é um número.")
+
+Soma = 0
+    cada divisor em range(1, UserNum-1) #Verificação em lista excluíndo o UserNum
+        se UserNum dividido por divisor == 0 #Se cada divisor der um resultado de 0
+            Soma = Soma + divisor 
+    
+    se Soma == UserNum #E se a soma dos divisores for igual ao UserNum inserido então é perfeito
+    imprime("É um número é perfeito.")
+
+    se Soma != UserNum
+    imprime("Número não é perfeito.")

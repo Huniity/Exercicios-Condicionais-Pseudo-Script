@@ -1,0 +1,21 @@
+#Programa para desconto de NISS de um salário
+
+entrada("Por favor introduza o seu salário para calculármos o seu desconto", UserSalary)
+    se UserSalary não é um número
+    crash("O seu salário tem de ser apenas números")
+
+se UserSalary > 0
+    e se UserSalary <= 1100
+    funcao multiplicar(11/UserSalary)x100
+    retorne desconto
+    funcao substrair(UserSalary-desconto)
+    retorne limpo
+imprime("O seu salário limpo será de ", +limpo"€, após um desconto de ", +desconto"€")
+
+se UserSalary > 0
+    e se UserSalary > 1100
+    funcao multiplicar(27.5/UserSalary)x100
+    retorne desconto
+    funcao substrair(UserSalary-desconto)
+    retorne limpo
+imprime("O seu salário limpo será de ", +limpo"€, após um desconto de ", +desconto"€")

@@ -5,6 +5,8 @@ entrada("Por favor introduza o preço do produto para calcularmos o seu desconto
 
 se priceProd < 100
     crash("O preço do seu item é inferior à 100€, lamentamos mas não tem direito a desconto.")
+se priceProd não for um número
+    crash("O que introduziu não é um número.")
 
 se priceProd > 100
     funcao multiplicar(10/priceProd)x100

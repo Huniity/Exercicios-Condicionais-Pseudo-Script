@@ -1,0 +1,19 @@
+#Programa para determinar se um número é divisível por 3 e por 5
+
+entrada("Por favor introduza um número.", UserNum)
+    se UserNum não for números
+        crash("Introduze apenas números.")
+
+funcao soma(todos algarismo em UserNum) #Somar todos os algarismo (Ex:345 - 3+4+5)
+    retorne resultado1
+
+funcao dividir(resultado1 / 3) #Dividir por 3 até resultado 0
+    retorne resultado2
+
+se resultado2 = 0 
+    e se último algarismo de UserNum for [0 ou 5] #Último algarismo for 0 ou 5
+        imprime("O ", + UserNum "é divisível por 3 e por 5.")
+
+se resultado2 =/= 0
+    ou se último algarismo de UserNum for [0 ou 5]
+        imprime("O ", + UserNum " não é divisível por 3 e por 5.")

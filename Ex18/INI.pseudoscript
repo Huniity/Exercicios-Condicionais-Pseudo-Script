@@ -1,0 +1,9 @@
+#Programa para descobrir se um número é potência de 2
+
+entrada("Por favor introduza um  número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+se UserNum > 0 
+    e se UserNum % (UserNum - 1) == 0 
+imprime("O número que introduziu é potência de 2.")

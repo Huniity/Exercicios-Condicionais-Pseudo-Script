@@ -1,0 +1,17 @@
+#Programa para decidir se uma pessoa pode votar
+
+min_age = 16
+
+entrada("Por favor entroduza o seu nome", UserName)
+    se UserName não for letras
+    crash("O seu nome deve apenas conter letras.")
+
+entrada("Por favor entroduza a sua idade", UserAge)
+    se UserAge não for números
+    crash("A sua idade deve apenas conter números.")
+
+se UserAge < min_age
+    crash("Lamentamos ", UserName", não pode votar por não ter idade legal.")
+
+se UserAge >= min_age
+    imprimir("Parabéns ", UserName", pode votar por ter idade legal.")

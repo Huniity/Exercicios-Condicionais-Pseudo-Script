@@ -13,3 +13,9 @@ imprime("O seu número é ", + UserNum)
 
     imprime("O seu número é primo.")
     
+
+
+
+#cada elemento em lista(2, Usernum-1):
+#se  numero % elemento == 0)
+#não é primo

@@ -1,0 +1,17 @@
+#Programa para saber se um ano é número primo ou não
+
+entrada("Por favor introduze um ano." , UserYear)
+    se UserYear não é um número
+        crash("O ano tem de ser um número.")
+
+    se UserYear =< 1
+        e se UserYear = 0
+        cada divisor em lista(2, UserYear-1)
+            se  UserYear % divisor == 0
+        e se UserYear % divisor não for inteiro
+        crash("O seu ano não é primo")
+
+    imprime("O seu número é primo")
+        
+
+  

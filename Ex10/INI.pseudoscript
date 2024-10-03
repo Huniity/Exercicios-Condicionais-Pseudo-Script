@@ -1,0 +1,29 @@
+#Programa para descobrir se um triângulo é equilátero, sósceles ou escaleno
+
+entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide1)
+
+entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide2)
+
+entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide3)
+
+    se UserSide1 não for um número #Verificação dos carácteres inseridos
+        ou UserSide2 não for um número
+            ou UserSide3 não for un número
+    crash("Um dos dados inseridos não é um número.")
+
+    imprime("O primeiro lado em ", + UserSide1 "cm.")    
+    imprime("O segundo lado em ", + UserSide2 "cm.")
+    imprime("O terceiro lado em ", + UserSide3 "cm.")
+
+se UserSide1 = UserSide2 = UserSide3 #Verificação do tamanho dos lados 
+    imprime("O triângulo é equilátero.")
+
+se UserSide1 = UserSide2 #Verificação do tamanho dos lados 
+    ou UserSide1 = UserSide3
+        ou Userside2 = UserSide3
+            imprime("O triângulo é isosceles.")
+
+se UserSide1 =/= UserSide2 #Verificação do tamanho dos lados 
+    ou UserSide1 =/= UserSide3
+        ou UserSide2 =/= UserSide3
+            imprime("O triângulo é escaleno.")

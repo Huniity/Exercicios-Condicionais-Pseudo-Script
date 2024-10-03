@@ -1,0 +1,48 @@
+#Programa para cálculo de IMC e classificação da situação do usuário
+
+entrada("Por favor introduze o nome do usuário", UserName)
+    se UserName não for letras
+        crash("O nome tem de conter apenas letras.")
+
+entrada("Introduze o peso do usuário ", + UserName" ", UserWeight)
+    se UserWeight não for números
+        crash("O peso tem de ser apenas números.")
+
+entrada("Introduze a altura do usuário 'Ex: 169cm -> 1.69'", + UserName" ", UserHeight)
+    se UserHeight não for números
+        crash("Altura tem de ser apenas números.")
+        se UserHeight não for em décimais
+        crash("Altura tem de ser apenas em décimais. 'Ex: 169cm -> 1.69'")
+
+imprime("O usuário ",+ UserName", tem peso de ", +UserWeight" e mede ",+ UserHeight"m.")
+
+funcao dividir((UserHeight x UserHeight)/UserWeight) #Cálculo de IMC
+    retorne UserIMC
+
+imprime("O IMC do usuário é de ", + UserIMC)
+
+    imprime("TABELA DE IMC")
+        imprime("Baixo Peso < 18.5")
+        imprime("Peso Normal 18.5 - 24.9")
+        imprime("Pré-Obesidade 25.0 - 29.9")
+        imprime("Obesidade 1 30.0 - 34.9")
+        imprime("Obesidade 2 35.0 - 39.9")
+        imprime("Obesidade 3 > 40")
+
+se UserIMC < 18.5
+    imprime("Segundo os dados fornecidos o usuário está abaixo de peso.")       
+
+se UserIMC está no range 18.5 até 24.9 #Verificação se o UserIMC está dentro da faixa
+    imprime("Segundo os dados fornecidos o usuário está com peso normal.")
+
+se UserIMC está no range 25.0 até 29.9
+    imprime("Segundo os dados fornecidos o usuário está com pré obesidade.")
+
+se UserIMC está no range 30.0 até 34.9
+    imprime("Segundo os dados fornecidos o usuário está com Obesidade Grau 1.")
+
+se UserIMC está no range 235.0 até 39.9
+    imprime("Segundo os dados fornecidos o usuário está com Obesidade Grau 2.")
+
+se UserIMC > 40.0
+    imprime("Segundo os dados fornecidos o usuário está com Obesidade Grau 3.")
