@@ -1,0 +1,26 @@
+#Programa para saber se um número é de Fibonacci
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+funcao soma((5*UserNum)*2+4 )
+    retorne resultado1
+funcao soma((5*UserNum)*2-4 )
+    retorne resultado2
+#Cálculo das 2 condições de Fibonacci (5*UserNum)*2+4 e (5*UserNum)*2-4
+se resultado1 < 0
+    crash("O número não pode ser negativo")
+se resultado2 < 0
+    crash("O número não pode ser negativo")
+
+
+cada i em lista(resultado1 + 1) #Todos os numeros de 0 até resultado1
+
+cada i em lista(resultado2 + 1) #Todos os numeros de 0 até resultado2
+    se i x i == resultado1 #Verificação de todos os quadrados até resultado1
+        e se i x i == resultado2 #Verificação de todos os quadrados até o resultado2
+
+#resultado1 e resultado2 têm de ser quadrados perfeitos para ser de Fibonacci
+
+imprime("O seu número é de Fibonacci")

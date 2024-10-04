@@ -6,5 +6,5 @@ entrada("Por favor introduza um número:", UserNum)
     
         se UserNum % 2 == 0 #Se UserNum for divido por 2 e resultado for 0 então é Par
             imprime("O seu número é ", + UserNum "e o seu número é Par")
-        se UserNum % 2 =/= 0 #Se UserNum for divido por 2 e resultado não for 0 então é Impar
+        se UserNum % 2 != 0 #Se UserNum for divido por 2 e resultado não for 0 então é Impar
             imprime("O seu número é ", + UserNum "e o seu número é Impar")

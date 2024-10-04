@@ -1,0 +1,27 @@
+#Programa para saber se um triângulo é retângulo, obtusângulo ou acutângulo.
+
+entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide1)
+
+entrada("Por favor introduza o tamanho do lado 'B' do triângulo", UserSide2)
+
+entrada("Por favor introduza o tamanho do lado 'C' do triângulo", UserSide3)
+
+    se UserSide1 não for um número #Verificação dos carácteres inseridos
+        ou UserSide2 não for um número
+            ou UserSide3 não for un número
+    crash("Um dos dados inseridos não é um número.")
+
+    imprime("O primeiro lado em ", + UserSide1 "cm.")    
+    imprime("O segundo lado em ", + UserSide2 "cm.")
+    imprime("O terceiro lado em ", + UserSide3 "cm.")
+
+funcao soma((a*2)+(b*2))
+    retorne resultado
+
+        se resultado == (c*2)
+            imprime("O seu triângulo é retângulo.")
+        se resultado < (c*2)
+            imprime("O seu triângulo é obtusângulo.")
+        break
+
+imprime("O triângulo é acutângulo.")

@@ -1,0 +1,23 @@
+#Programa para descobrir o valor do aluguer consoante o valor díario e preço por kilómetro.
+
+daily_price = 50
+dist_price = 0.2
+
+entrada("Por favor introduza um quantos dias alugou o carro", UserDays)
+    se UserDays não for um número
+    crash("O valor que introduziu não é um número.")
+
+entrada("Por favor introduza um quantos kilómetros fez com o carro 'Ex: 2200m -> 2.2km'", UserKm)
+    se UserKm não for um número
+    crash("O valor que introduziu não é um número.")
+
+funcao multiplicar(UserDays * daily_price)
+    retorne aluguer
+
+funcao multiplicar(UserKm * dist_price)
+    retorne rodagem
+
+funcao somar(aluguer + rodagem)
+    retorne aluguer_total
+
+imprime("O seu aluguer é total é de ", +aluguer_total "€ (", +aluguer"€ pela duração e ",+ rodagem "€ pela rodagem kilométrica.)")

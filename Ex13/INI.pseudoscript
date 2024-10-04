@@ -7,7 +7,7 @@ entrada("Por favor introduza à distancia em kilómetros que pretende para entre
         ou se UserDist não for um número
             crash("O distância tem que ser um número e em decimal 'Ex: 2500m -> 2.5km'")
 
-funcao multiplicar(UserDist x distPrice)
+funcao multiplicar(UserDist * distPrice)
     retorne resultado
 
 imprime("O valor da sua entrega será de ", + resultado "€ de acordo com um valor de entrega de 1.50€ por kilómetro.")

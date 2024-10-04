@@ -6,11 +6,11 @@ entrada("Por favor introduza um ano afim de saber se é bisexto.", UserYear)
 
 imprime("O seu ano escolhido foi", + UserYear ".")
     
-    se UserYear % 4 =/= 0 #Se não for multiplo de 4, não é bisexto
+    se UserYear % 4 != 0 #Se não for multiplo de 4, não é bisexto
         imprime("O ano escolhido não é bisexto")
     
     se UserYear % 4 == 0 #Se for multiplo de 4
         e se UserYear é um número inteiro #E inteiro
             e se UserYear % 400 == 0 #E multiplo de 400
-    ou se UserYear % 100 =/= 0 #Ou não é multiplo de 100
+    ou se UserYear % 100 != 0 #Ou não é multiplo de 100
         imprime("O ano escolhido é bisexto")

@@ -11,11 +11,4 @@ imprime("O seu número é ", + UserNum)
             e se UserNum % 1 #E se UserNum dividido por 1 for 0
                 e se UserNum for um número inteiro #E se UserNum não tiver parte decimal
 
-    imprime("O seu número é primo.")
-    
-
-
-
-#cada elemento em lista(2, Usernum-1):
-#se  numero % elemento == 0)
-#não é primo
+imprime("O seu número é primo.")

@@ -1,0 +1,16 @@
+#Programa para saber um ano é um número de Armstrong.
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+digitos = lista[UserNum] #converte o número em lista  (Ex: 1634 -> [1,6,3,4])
+    num_digitos = contar(num_digitos) #conta os dígitos em lista 
+
+    soma((digito * num_digitos) para cada digito em digitos) #Soma as potencias de cada dígito em lista (Ex: 1634 - soma((1x4)+(6x4)+(3x4)+(4x4))
+        retorne soma_potencias
+        
+    if soma_potencias == UserNum
+        imprime("O seu número é de Armstrong.")
+    if soma_potencias != UserNum
+        imprime("O seu número não é de Armstrong")

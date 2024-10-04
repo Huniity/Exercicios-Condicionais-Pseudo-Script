@@ -9,9 +9,9 @@ se priceProd não for um número
     crash("O que introduziu não é um número.")
 
 se priceProd > 100
-    funcao multiplicar(10/priceProd)x100
-    retorne Discount #O valor do desconto após calculo
-    funcao substrair(priceProd-Discount)
+    funcao multiplicar(10*priceProd)/100
+    retorne discount #O valor do desconto após calculo
+    funcao substrair(priceProd-discount)
     retorne finalPrice #O valor do preço final após deduzir o desconto
 
-imprime("O preço do seu artigo após um desconto de ", + Discount"€ é de ", +finalPrice"€.")
+imprime("O preço do seu artigo após um desconto de ", + discount"€ é de ", +finalPrice"€.")

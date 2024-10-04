@@ -1,0 +1,26 @@
+#Programa para saber se número é número de primo de Fermat
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+se UserNum não é inteiro
+    e se UserNum < 0
+        crash("O número inserido têm de ser maior de 0 e inteiro")
+
+se UserNum > 1 #Se UserNum for superior à 1
+        e se UserNum % UserNum = 0 #E se o resultado de UserNum dividido por UserNum for 0
+            e se UserNum % 1 #E se UserNum dividido por 1 for 0
+                e se UserNum for um número inteiro #E se UserNum não tiver parte decimal
+
+senao crash("Número não é primo")
+
+funcao multiplicar(2 * (2 * Usernum))+ 1
+    retorne fermat
+
+se UserNum != fermat
+    imprime("O seu número não é primo de Fermat")
+se UserNum == fermat
+    imprime("O seu número é primo de Fermat")
+
+

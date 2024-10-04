@@ -1,0 +1,21 @@
+#Programa para calcular o factorial de um número
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+se UserNum não é inteiro
+    e se UserNum < 0
+        crash("O número inserido têm de ser maior de 0 e inteiro")
+
+se UserNum == 0
+    ou se Usernum == 1
+        imprime("O factorial do número é 1.")
+
+cada i em lista(2, UserNum ) 
+    funcao multiplicar(UserNum * i)
+        retorne factorial
+#Mutiplica todos os números no intervalo 2 -> UserNum-1 (Ex: UserNum5: 5x4x3x2x1)
+
+
+imprime("O factorial do número ", + UserNum" é ", + factorial".")

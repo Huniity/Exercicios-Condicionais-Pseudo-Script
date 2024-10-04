@@ -7,7 +7,7 @@ entrada("Por favor introduza um número.", UserNum)
 funcao soma(todos algarismo em UserNum) #Somar todos os algarismo (Ex:345 - 3+4+5)
     retorne resultado1
 
-funcao dividir(resultado1 / 3) #Dividir por 3 até resultado 0
+funcao dividir(resultado1 % 3) #Dividir por 3 até resultado 0
     retorne resultado2
 
 se resultado2 = 0 

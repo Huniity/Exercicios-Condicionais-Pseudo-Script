@@ -1,0 +1,20 @@
+#Programa para descobrir se um número é triangular
+
+entrada("Por favor introduza um  número", UserNum)
+    se UserNum não for um número
+        crash("O valor que introduziu não é um número.")
+
+    se UserNum < 0
+        crash("O número não pode ser negativo")
+
+i = 0
+
+funcao multiplicar(i*(i+1)) / 2
+    retorne resultado
+
+        se resultado == UserNum
+            imprime("O seu número é triangular.")
+
+        se resultado != UserNum
+            imprime("O seu número não é triangular.")
+

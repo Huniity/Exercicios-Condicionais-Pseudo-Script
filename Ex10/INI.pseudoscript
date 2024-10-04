@@ -2,9 +2,9 @@
 
 entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide1)
 
-entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide2)
+entrada("Por favor introduza o tamanho do lado 'B' do triângulo", UserSide2)
 
-entrada("Por favor introduza o tamanho do lado 'A' do triângulo", UserSide3)
+entrada("Por favor introduza o tamanho do lado 'C' do triângulo", UserSide3)
 
     se UserSide1 não for um número #Verificação dos carácteres inseridos
         ou UserSide2 não for um número

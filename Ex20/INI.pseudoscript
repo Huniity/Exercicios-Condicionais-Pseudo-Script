@@ -1,1 +1,15 @@
 #Programa para verificar se uma palavra é um palíndromo
+
+entrada("Por favor introduza uma palavra afim de vermos se é uma palavra palíndroma", UserWord)
+    se UserWord não for letras
+        crash("Tem de introduzar apenas letras")
+
+posicao = 0
+
+cada i em lista[UserWord]
+    se UserWord[i] != UserWord[posicao-1-i]
+        imprime("A palavra não é palíndroma.")
+#Programa verifica se em todas as posições a letra é igual à palavra original
+
+    se UserWord[i] == UserWord[posicao-1-i]
+        imprime("A palavra é palíndroma.")

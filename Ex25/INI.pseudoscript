@@ -1,0 +1,16 @@
+#Programa para calcular a raiz quadrada de um número positivo
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+se UserNum < 0
+    crash("O seu número é negativo")
+
+i = 0
+
+enquanto (i*i)<UserNum 
+    i+1
+se i+i == UserNum #Programa calcula todos as raizes quadradas a partir de 0 até chegar a UserNum
+    retorne resultado
+    imprime("A raiz quadrado de ", + UserNum" é ", + resultado".")

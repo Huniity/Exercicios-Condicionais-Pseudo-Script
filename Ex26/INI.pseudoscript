@@ -1,0 +1,15 @@
+#Programa para saber um número um quadrado perfeito.
+
+entrada("Por favor introduza um número", UserNum)
+    se UserNum não for um número
+    crash("O valor que introduziu não é um número.")
+
+se UserNum < 0
+    crash("O número não pode ser negativo")
+
+cada i em lista(UserNum + 1) #Todos os numeros de 0 até UserNum
+    se i x i == UserNum #Verificação de todos os quadrados até UserNum
+        imprime("O seu número é um quadrado perfeito.")
+
+    se i x i != UserNum
+        imprime("O seu n+umero não é um quadrado perfeito.")

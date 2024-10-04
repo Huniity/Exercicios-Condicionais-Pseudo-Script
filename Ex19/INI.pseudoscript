@@ -6,7 +6,7 @@ entrada("Por favor introduza o seu salário para calculármos o seu desconto", U
 
 se UserSalary > 0
     e se UserSalary <= 1100
-    funcao multiplicar(11/UserSalary)x100
+    funcao multiplicar(11*UserSalary)% 100
     retorne desconto
     funcao substrair(UserSalary-desconto)
     retorne limpo
@@ -14,7 +14,7 @@ imprime("O seu salário limpo será de ", +limpo"€, após um desconto de ", +d
 
 se UserSalary > 0
     e se UserSalary > 1100
-    funcao multiplicar(27.5/UserSalary)x100
+    funcao multiplicar(27.5*UserSalary)% 100
     retorne desconto
     funcao substrair(UserSalary-desconto)
     retorne limpo
