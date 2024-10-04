@@ -4,14 +4,38 @@ entrada("Por favor introduza um número", UserNum)
     se UserNum não for um número
     crash("O valor que introduziu não é um número.")
 
-se UserNum não é inteiro
-    e se UserNum < 0
-        crash("O número inserido têm de ser maior de 0 e inteiro")
+se UserNum < 1
+    crash("O seu número tem de ser positivo")
+se UserNum == 1 
+    imprime("O seu número não é primo.")
 
-se UserNum > 1 #Se UserNum for superior à 1
-        e se UserNum % UserNum = 0 #E se o resultado de UserNum dividido por UserNum for 0
-            e se UserNum % 1 #E se UserNum dividido por 1 for 0
-                e se UserNum for um número inteiro #E se UserNum não tiver parte decimal
+cada i em lista(2, UserNum-1)
+    se (UserNum % i) == 0 
+        ou se (UserNum % i) não for inteiro
+            crash("O seu número não é primo")
+#Verificação se o número é primo
 
-senao crash("Número não é primo")
+Soma = 0
+    cada divisor em range(1, UserNum-1) #Verificação em lista excluíndo o UserNum
+        se UserNum dividido por divisor == 0 #Se cada divisor der um resultado de 0
+            Soma = Soma + divisor 
+    
+    
+    se Soma != UserNum
+    crash("Número não é perfeito.")
+#Verificação se o número é perfeito
 
+funcao substrair(multiplicar(2 ** UserNum))-1 #2^Usernum -1 vai dar número de mersenne
+    retorne numero_mersenne
+
+se numero_mersenne < 1
+    crash("O seu número tem de ser positivo")
+se numero_mersenne == 1 
+    imprime("O seu número não é primo.")
+
+cada i em lista(2, numero_mersenne-1)
+    se (numero_mersenne % i) == 0 
+        ou se (numero_mersenne % i) não for inteiro
+            crash("O seu número não é primo")
+
+imprime("O seu número é número de Mersenne primo e perfeito.")

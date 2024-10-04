@@ -14,7 +14,7 @@ entrada("Por favor introduze à nota em Front-end I", UserNote3)
  se UserNote3 não é um número
     crash("O que introduziu não é um número.")
 
-funcao soma(UserNote1+UserNote2+UserNote3)%3 #Soma das 3 notas e divisão por 3
+funcao soma(UserNote1+UserNote2+UserNote3)% 3 #Soma das 3 notas e divisão por 3
     retorne media #Resultado da média
 
 imprime("A média do aluno ", + UserName" é de", + media)
@@ -23,5 +23,5 @@ imprime("A média do aluno ", + UserName" é de", + media)
         ou se media = 7 
         imprime("O aluno foi aprovado!")
 
-    se media <7
+    se media < 7
         imprime ("O aluno foi reprovado!")

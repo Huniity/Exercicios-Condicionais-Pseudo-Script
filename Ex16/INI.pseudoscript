@@ -11,7 +11,7 @@ entrada("Por favor entroduza a sua idade", UserAge)
     crash("A sua idade deve apenas conter números.")
 
 se UserAge < min_age
-    crash("Lamentamos ", UserName", não pode votar por não ter idade legal.")
+    crash("Lamentamos ", + UserName", não pode votar por não ter idade legal.")
 
 se UserAge >= min_age
-    imprimir("Parabéns ", UserName", pode votar por ter idade legal.")
+    imprimir("Parabéns ", + UserName", pode votar por ter idade legal.")

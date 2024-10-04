@@ -6,9 +6,15 @@ entrada("Por favor introduza um número.", UserNum)
 
 imprime("O seu número é ", + UserNum)
 
-    se UserNum > 1 #Se UserNum for superior à 1
-        e se UserNum % UserNum = 0 #E se o resultado de UserNum dividido por UserNum for 0
-            e se UserNum % 1 #E se UserNum dividido por 1 for 0
-                e se UserNum for um número inteiro #E se UserNum não tiver parte decimal
+se UserNum < 1
+    crash("O seu número tem de ser positivo")
+se UserNum == 1 
+    imprime("O seu número não é primo.")
+
+cada i em lista(2, UserNum-1)
+    se (UserNum % i) == 0 
+        ou se (UserNum % i) não for inteiro
+            crash("O seu número não é primo")
+
 
 imprime("O seu número é primo.")

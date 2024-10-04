@@ -4,12 +4,13 @@ entrada("Por favor introduza uma palavra afim de vermos se é uma palavra palín
     se UserWord não for letras
         crash("Tem de introduzar apenas letras")
 
-posicao = 0
+ UserWord_reverse = "" #String vazia on o programa vai colocar as letras em sentido inverso
 
-cada i em lista[UserWord]
-    se UserWord[i] != UserWord[posicao-1-i]
-        imprime("A palavra não é palíndroma.")
-#Programa verifica se em todas as posições a letra é igual à palavra original
+    para cada letra em lista(UserWord) 
+        UserWord_reverse = letra + UserWord_reverse
+    imprime ("A sua palavra revertida é: ", + UserWord_reverse)
 
-    se UserWord[i] == UserWord[posicao-1-i]
-        imprime("A palavra é palíndroma.")
+    se UserWord == UserWord_reverse
+        imprime("Palavra é um palíndromo")
+    se UserWord != UserWord_reverse
+        imprime("Palavra não é um palíndromo")

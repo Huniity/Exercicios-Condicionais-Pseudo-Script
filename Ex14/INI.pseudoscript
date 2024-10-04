@@ -7,7 +7,7 @@ entrada("Por favor introduza um número.", UserNum)
 Soma = 0
     cada divisor em range(1, UserNum-1) #Verificação em lista excluíndo o UserNum
         se UserNum dividido por divisor == 0 #Se cada divisor der um resultado de 0
-            Soma = Soma + divisor 
+            Soma = Soma + divisor #Soma cada divisor
     
     se Soma == UserNum #E se a soma dos divisores for igual ao UserNum inserido então é perfeito
     imprime("É um número é perfeito.")

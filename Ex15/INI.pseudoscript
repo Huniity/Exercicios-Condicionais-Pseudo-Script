@@ -3,15 +3,16 @@
 entrada("Por favor introduze um ano." , UserYear)
     se UserYear não é um número
         crash("O ano tem de ser um número.")
+       
+se UserYear < 1
+    crash("O seu ano tem de ser positivo")
+se UserYear == 1 
+    imprime("O seu ano não é primo.")
 
-    se UserYear =< 1
-        e se UserYear = 0
-        cada divisor em lista(2, UserYear-1)
-            se  UserYear % divisor == 0
-        e se UserYear % divisor não for inteiro
-        crash("O seu ano não é primo")
+cada i em lista(2, UserYear-1)
+    se (UserYear % i) == 0 
+        ou se (UserYear % i) não for inteiro
+            crash("O seu ano não é primo")
 
-    imprime("O seu número é primo")
-        
 
-  
+imprime("O seu ano é primo.")  

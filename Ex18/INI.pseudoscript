@@ -2,8 +2,17 @@
 
 entrada("Por favor introduza um  número", UserNum)
     se UserNum não for um número
-    crash("O valor que introduziu não é um número.")
+        crash("O valor que introduziu não é um número.")
 
-se UserNum > 0 
-    e se UserNum % (UserNum - 1) == 0 
-imprime("O número que introduziu é potência de 2.")
+
+    enquanto UserNum > 1 #programa corre enquanto o UserNum for maior de 1
+        se UserNum % 2 != 0 #Se o UserNum a dividir por 2 é diferente de 0 então não será potência
+            imprime("O número não é divisível por 2 então não é potência.") 
+    
+    funcao dividir(UserNum % 2)
+        retorne resultado
+            se resultado não é número inteiro
+                break("Número não inteiro logo não é potência.")
+
+        se resultado == 1
+            imprime("O número que introduziu é potência de 2.")

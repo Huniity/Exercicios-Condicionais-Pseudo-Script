@@ -14,7 +14,7 @@ entrada("Introduze a altura do usuário 'Ex: 169cm -> 1.69'", + UserName" ", Use
         se UserHeight não for em décimais
         crash("Altura tem de ser apenas em décimais. 'Ex: 169cm -> 1.69'")
 
-imprime("O usuário ",+ UserName", tem peso de ", +UserWeight" e mede ",+ UserHeight"m.")
+imprime("O usuário ",+ UserName", tem peso de ", + UserWeight" e mede ",+ UserHeight"m.")
 
 funcao dividir((UserHeight x UserHeight)/UserWeight) #Cálculo de IMC
     retorne UserIMC

@@ -1,22 +1,23 @@
 #Programa para classificar a idade de uma pessoa
 
-crianca = [0 até 12]
+/* crianca = [0 até 12]
 adolescente = [13 até 17]
 adulto = [18 até 59]
 idoso = [60 até idoso+1]
+*/
 
 entrada("Por favor introduza a sua idade", UserAge)
     se UserAge não for um número
     crash("A sua idade tem de conter apenas números")
  
-se UserAge = crianca
+se UserAge entre 0 e 12
     imprime("O utilizador é uma criança.")
 
-se UserAge = adolescente
+se UserAge entre 13 e 17
     imprime("O utilizador é um adolescente.")
 
-se UserAge = adulto
+se UserAge entre 18 e 59
     imprime("O utilizador é um adulto.")
 
-se UserAge = idoso
+se UserAge 60 e > 60
     imprime("O utilizador é um idoso.")
