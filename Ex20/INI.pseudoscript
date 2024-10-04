@@ -4,13 +4,11 @@ entrada("Por favor introduza uma palavra afim de vermos se é uma palavra palín
     se UserWord não for letras
         crash("Tem de introduzar apenas letras")
 
- UserWord_reverse = "" #String vazia on o programa vai colocar as letras em sentido inverso
-
-    para cada letra em lista(UserWord) 
-        UserWord_reverse = letra + UserWord_reverse
-    imprime ("A sua palavra revertida é: ", + UserWord_reverse)
-
-    se UserWord == UserWord_reverse
-        imprime("Palavra é um palíndromo")
-    se UserWord != UserWord_reverse
-        imprime("Palavra não é um palíndromo")
+original = UserWord #Input utilizador
+UserWord_reverse = "" #Onde será armazenado as letras em reverse
+    para cada carater em original: 
+        UserWord_reverse = carater + UserWord_reverse #Colocação de todos os caráteres em sentido inverso na string vazia 
+            se original = UserWord_reverse 
+                imprimir("Palavra é um palíndromo")
+            senao
+                imprmir("Palavra não é um palíndromo")
