@@ -21,3 +21,27 @@ se UserAge entre 18 e 59
 
 se UserAge 60 e > 60
     imprime("O utilizador é um idoso.")
+
+
+#Correção J.Alves
+
+#Desenvolvimento
+
+funcao classificaPessoa(idade):
+    se idade NAO for inteiro ou idade < 0:
+        crash("Pf introduza um número inteiro e positivo")
+    se idade < 12:
+        retorne "Criança"
+    se idade >= 13 E idade <=17:
+        retorne "Adolescente"
+    se idade >=18 E idade <=59:
+        retorne "Adulto"
+    retorne "Idoso"
+
+
+
+#Execução
+
+entrada("Introduza a sua idade", idade)
+
+imprime(classifcaPessoa(idade))
