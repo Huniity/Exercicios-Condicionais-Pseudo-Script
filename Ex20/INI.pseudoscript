@@ -12,3 +12,23 @@ UserWord_reverse = "" #Onde será armazenado as letras em reverse
                 imprimir("Palavra é um palíndromo")
             senao
                 imprmir("Palavra não é um palíndromo")
+
+
+#desenvolvimento
+
+funcao verificaPalindromo(texto):
+    se texto NAO tem letras:
+        crash("O texto não tem letras")
+
+    se texto[0] != texto[texto.tamanho()-1]
+
+    tamanho = texto.tamanho()-1
+    palindromo = []
+
+    enquanto tamanho >=0 
+        palindromo.adicionar(texto[tamanho])
+        tamanho = tamanho-1
+
+    se texto == palindromo:
+        retorne "é palindromo"
+    retorne "não é palindromo"    
